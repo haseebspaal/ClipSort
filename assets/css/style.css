@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');     
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Poppins;
+        }
+        .dropdown .dropdown-toggle{
+            color: #FC7643;
+            text-decoration: none;
+        }
+        .logo{
+            display: flex;
+            /* justify-content: center; */
+            align-items:center ;
+        }
+        .btn-class{
+            background-color:  #FC7643;
+            border: 1px solid #FC7643;
+            color: #f2f2f2;
+            border-radius: 10px;
+            padding: 10px;
+            width: 138px;
+            transition: .1s ease-in;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 90;
+            /* box-shadow: 0 0 10px black; */
+        }
+        #chk1{
+            display: none;
+        }
+        
+        i{
+            color: #FC7643;
+            cursor: pointer;
+        }
+        header .logo{
+            flex: 1;
+        }
+       
+        header ul{
+            flex: 2;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        header ul li{
+            list-style: none;
+            padding: 0 25px;
+
+        }
+        header ul li a{
+            text-decoration: none;
+            color: #000000;
+            transition: .1s ease-in;
+        }
+        header ul li a:hover, .btn-class:hover{
+            text-decoration: none;
+            color: #000000;
+            font-weight: 500;
+        }
+        
+        header .menu{
+            font-size: 2.5rem;
+            display: none;
+        }
+        
+
+        /* Navbar CSS END */
+
+        span{
+            color: #FC7643;
+        }
+        .hero-text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .hero-text h1{
+            font-family: Poppins;
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 72px;
+            text-align: center;
+        }
+        .hero-text button{
+            margin: 40px 0;
+        }
+        .hero-img{
+            background-image: url("../img/Group.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-text > p{
+            line-height: 30px;
+        }
+        .hero-img #hero-page{
+            z-index: 63;
+        }
+        #hero-bg{
+            position: absolute;
+            width: 100%;
+        }
+       /* / */
+        .launch p{
+            width: 65%;
+            text-align: center;
+            padding-top: 30px ;
+        }
+        .launch button{
+            width: 240px;
+            margin: 20px 0;
+        }
+        section{
+            width: 100%;
+        }
+        /* .features{
+            padding: 150px 0;
+        } */
+        .features .hero-text, .Benefits .hero-text{
+            align-items: start;
+        }
+        
+        .features .hero-text h2, .Benefits .hero-text h2{
+            font-family: Poppins;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 60px;
+            text-align: left;
+            margin-bottom: 40px;
+        }
+        .features .hero-text p{
+            font-family: Space Grotesk;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: justified;
+        }
+        .Benefits .hero-text li{
+            font-family: Space Grotesk;
+            color: rgb(66, 66, 66);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: justified;
+        }
+        
+        .features .img, .Benefits .img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .Benefits .pt-5{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .pricing{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .fw-bold{
+            font-weight: bold !important;
+        }
+        .toggle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-gap: 20px;
+        }
+        .plan{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 12px;
+            border: 1px solid lightgray;
+        }
+        .regular-plan{
+            border: 1px solid #FC7643;
+        }
+        .plan{
+            padding: 20px 30px !important;
+            margin: 20px 0;
+        }
+        .plan span{
+            font-weight: bold;
+            font-size: 24px;
+            font-family: sans-serif;
+        }
+        .plan h1{
+            font-weight: bolder;
+            font-size: 54px;
+            margin: 12px 0;
+        }
+        .plan .btn-class{
+            background: #F5F5F5;
+            color: #111;
+            width: 85%;
+            display: block;
+            margin: 0 auto;
+            padding: 22px 0;
+            border: 1px solid #9d9d9d97;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .regular-plan .btn-class{
+            background-color: #FC7643;
+            color: #fff;
+        }
+        .plan ul li{
+            list-style: none;
+            color: #717070;
+            padding: 10px 0 10px 30px;
+        }
+        footer p{
+            font-size: 14px;
+            width: 90%;
+        }
+        footer a{
+            text-decoration: none;
+            color: black;
+        }
+        footer a:hover{
+            text-decoration: none;
+            color: black;
+        }
+        .paddingFooter div{
+           
+            text-align: center;
+        }
+        .input, .icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .input input{
+            padding: 8px 12px;
+            background-color: #f5f5f548;
+            height: 50px;
+            border-radius: 12px 0 0 12px;
+            border-top: 2px solid #777676ab;
+            border-bottom: 2px solid #777676ab;
+            border-left: 2px solid #777676ab;
+        }
+        .input button{
+            padding: 5px;
+            width: 50px;
+            height: 50px;
+            border-radius: 0 12px 12px 0;
+        }
+        .icons{
+            text-align: start;
+            margin-top: 20px;
+            justify-content: left;
+        }
+        .icons i{
+            padding: 0 8px;
+            color: #717070;
+            font-size: 18px;
+            transition: .1s ease-in;
+        }
+        .icons i:hover{
+            color: #FC7643;
+        }
+        #checkBox{
+            display: none;
+        }
+        #switch:hover{
+            cursor: pointer;
+        }
+        #switch{
+            max-width: 50px;
+            height: 25px;
+        }
+       
+
+
+        /* Responsive CSS */
+        @media(max-width:1100px){
+            .dropdown .dropdown-toggle{
+                color: #0e0e0e;
+                text-decoration: none;
+            }
+            .Benefits img{
+                /* display: none; */
+                width: 90%;
+            }
+            .Benefits .row{
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .pricing{
+                margin-top: 100px;
+            }
+            .input{
+                justify-content: center;
+                align-items: center;
+            }
+            footer .py-5, footer .text-muted, .icons{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+            }
+            .icons{
+                flex-direction: row;
+            }
+            
+            .hero-text h1{
+                font-size: 44px;
+            }
+            .hero-img #hero-page{
+                margin-top: 0px;
+            }
+            .launch{
+                margin-top: 70px;
+            }
+            header ul{
+                position: fixed;
+                height: calc(100vh - 50px);
+                top: 100px;
+                right: -100%;
+                width: 50%;
+                flex-direction: column;
+                align-items: center;
+                transition: right 0.5s linear;
+            }
+            header ul{
+                flex: 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-gap: 20px;
+                background-color: #FC7643;
+                color: #fff;
+            }
+            header .menu{
+                display: block;
+                width: 100px;
+                text-align: center;
+            }
+            header .btn-class{
+                background-color: #fff !important;
+                color: #FC7643 !important;
+            }
+            #chk1:checked ~ ul{
+                right: 0;
+            }
+            footer .copy{
+                margin-top: 60px;
+                margin-left: -40px !important;
+            }
+        }
+        @media(max-width:600px){
+            .hero-text h1{
+                font-size: 34px;
+            }
+            .hero-img #hero-page{
+                margin-top: 0px;
+            }
+             header .logo{
+                font-size: 10px;
+                margin-left: 18px;
+             }
+             header ul{
+                width: 100%;
+             }
+        }
